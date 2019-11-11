@@ -146,6 +146,203 @@ img {
 }
 
 
+/* Form */
+
+
+/* For the function */
+
+.msf_hide {
+    display: none;
+}
+
+.msf_show {
+    display: block;
+}
+
+.msf_bullet_o {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.msf_bullet_o>div {
+    height: 15px;
+    width: 15px;
+    margin: 20px 10px;
+    border-radius: 100px;
+    z-index: 2;
+}
+
+.msf_bullet {
+    background-color: lightgrey;
+}
+
+.msf_bullet_active {
+    background-color: #005D59;
+}
+
+
+/* Just for decoration */
+
+#form-body {
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.msf_line {
+    opacity: 0.3;
+    background: lightgrey;
+    height: 3px;
+    width: 70px;
+    display: block;
+    left: 50%;
+    margin-top: -29px;
+    margin-left: -35px;
+    position: absolute;
+    z-index: 1;
+}
+
+.onboard_info {
+    order: 1;
+    flex: 0 1 auto;
+    margin-top: 2em;
+    padding: 2em;
+    max-width: 500px;
+}
+
+.form_wrapper {
+    order: 2;
+    flex: 0 1 500px;
+    min-width: 500px;
+    border: hidden;
+    margin-top: 2em;
+}
+
+.signin_p {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.signin_p a {
+    color: #005D59;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.signin_p a:hover {
+    color: black;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 30px;
+    border-radius: 10px;
+    border: hidden;
+    background-color: white;
+    padding: 2em;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin: 0.5em 0 1em 0;
+}
+
+.form-group input,
+.form-group select {
+    outline: none;
+    border: 2px solid #ADADAD;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1.5em;
+    text-align: center;
+    transition: all 250ms ease-in-out;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    background-color: #F0F0F0;
+}
+
+input[type="button"],
+input[type="submit"] {
+    margin: 2em 0 1em 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    line-height: 0px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 1em 0 1em 0;
+    background-color: #005D59;
+    transition: all 150ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+.info_h1 {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #005D59;
+    margin: 1em 0 0.5em 0;
+}
+
+.info_h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    background-color: #005D59;
+    color: white;
+    padding: 0.5em;
+}
+
+.form_h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.img-logo {
+    display: block;
+    margin: -2em auto 1em auto;
+    max-width: 8em;
+}
+
+.form-group label {
+    display: block;
+    margin-top: 3em;
+    font-size: 1em;
+}
+
+.onboard_info p {
+    margin: 1em 0 1em 0;
+}
+
+.onboard_info li {
+    margin: 1em 0 1em 0;
+    list-style: disc outside;
+}
+
+
 /* Flexbox stuff */
 
 

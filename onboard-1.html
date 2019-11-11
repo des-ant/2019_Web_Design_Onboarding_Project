@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="designer" content="Anthony Yip">
+    <!-- Required imported CSS files -->
+
+    <!-- Reset CSS styles-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Title -->
+    <title>Triple J Unearthed Sign Up</title>
+
+</head>
+
+<body class="container" id="form-body">
+    <div class="onboard_info">
+        <img src="img/Logo_B_1.png" alt="Triple J Unearthed Logo" class="img-logo">
+        <h1 class="info_h1">why register?</h1>
+        <h2 class="info_h2">i'm a music lover</h2>
+        <p>Register as an Unearthed member and get involved with the Unearthed community.</p>
+        <ul>
+            <li>You can share your music tastes by rating and reviewing tracks, creating and tagging playlists.</li>
+            <li>Follow and connect with like-minded music lovers, triple j presenters, and artists.</li>
+            <li>See when and where local artists are playing</li>
+        </ul>
+        <h2 class="info_h2">i'm a music maker</h2>
+        <p>We listen to all the music that artists upload to the website and if we like what we hear, you could:</p>
+        <ul>
+            <li>be played on Unearthed digital radio</li>
+            <li>be played on triple j radio</li>
+            <li> be in the running to play at music festivals, or loads of other competitions we run.</li>
+        </ul>
+    </div>
+    <div class="form_wrapper">
+        <fieldset class="msf_hide">
+            <h2 class="form_h2">Create your account</h2>
+
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your first name here">
+                <div class="messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="firstname" placeholder="Enter your last name here">
+                <div class="messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email here">
+                <div class="messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password here">
+                <div class="messages"></div>
+            </div>
+
+            <input type="button" name="back" value="Back" onclick="msf_btn_back()">
+            <input type="button" name="next" value="Next" onclick="msf_btn_next()">
+            <div class="msf_bullet_o"></div>
+            <div class="msf_line"></div>
+
+            <div class="signin_p">
+                <p>Already have an account? <a href="#">Sign in.</a> </p>
+
+            </div>
+        </fieldset>
+
+        <fieldset class="msf_hide">
+            <h2 class="form_h2">Your details</h2>
+            <div class="form-group">
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" name="date" placeholder="Birthdate">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                          <option value="">Choose Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                <div class="messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                      <option value="">Choose Country</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AX">Åland Islands</option>
+                      <option value="AL">Albania</option>
+                      <option value="DZ">Algeria</option>
+                      <option value="AS">American Samoa</option>
+                      <option value="AD">Andorra</option>
+                      <option value="AO">Angola</option>
+                      <option value="AI">Anguilla</option>
+                      <option value="AQ">Antarctica</option>
+                      <option value="AG">Antigua and Barbuda</option>
+                      <option value="AR">Argentina</option>
+                      <option value="AM">Armenia</option>
+                      <option value="AW">Aruba</option>
+                      <option value="AU">Australia</option>
+                      <option value="AT">Austria</option>
+                      <option value="AZ">Azerbaijan</option>
+                    </select>
+                <div class="messages"></div>
+            </div>
+            <div class="form-group">
+                <label for="postcode">Postcode</label>
+                <input type="number" id="postcode" name="postcode" placeholder="Enter your postcode here">
+                <div class="messages"></div>
+            </div>
+            <input type="button" name="back" value="Back" onclick="msf_btn_back()">
+            <input type="button" name="next" value="Next" onclick="msf_btn_next()">
+            <div class="msf_bullet_o"></div>
+            <div class="msf_line"></div>
+        </fieldset>
+
+        <fieldset class="msf_hide">
+            <h2 class="form_h2">Your preferences</h2>
+            <div class="form-group">
+                <label for="taste">Your music tastes</label>
+                <input type="text" name="taste" placeholder="Enter your favourite genres here">
+            </div>
+            <div class="form-group">
+                <label for="news">Unearthed news</label>
+                <input type="radio" name="news" value="news">
+                <p>Add me to the newsletter</p>
+            </div>
+            <input type="button" name="back" value="Back" onclick="msf_btn_back()">
+            <input type="button" name="next" value="Next" onclick="msf_btn_next()">
+            <input type="submit" name="submit" value="Create" onclick="">
+            <div class="msf_bullet_o"></div>
+            <div class="msf_line"></div>
+        </fieldset>
+    </div>
+
+
+</body>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
