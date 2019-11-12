@@ -199,9 +199,7 @@ img {
     width: 70px;
     display: block;
     left: 50%;
-    margin-top: -29px;
-    margin-left: -35px;
-    position: absolute;
+    margin: -29px auto 2em auto;
     z-index: 1;
 }
 
