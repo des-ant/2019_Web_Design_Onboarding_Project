@@ -209,13 +209,13 @@ img {
     flex: 0 1 auto;
     margin-top: 2em;
     padding: 2em;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .form_wrapper {
     order: 2;
-    flex: 0 1 500px;
-    min-width: 500px;
+    flex: 0 1 400px;
+    min-width: 400px;
     border: hidden;
     margin-top: 2em;
 }
@@ -262,7 +262,7 @@ input {
     border: 2px solid #ADADAD;
     border-radius: 10px;
     background-color: white;
-    padding: 1.5em;
+    padding: 1em 0 1em 0;
     text-align: center;
     transition: all 250ms ease-in-out;
     font-size: 1em;
