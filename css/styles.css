@@ -435,7 +435,7 @@ input[type="submit"]:hover {
   }
   .onboard_info {
     max-width: 100%;
-    padding: 2em 0 0 0;
+    padding: 0 0 0 0;
   }
 }
 
