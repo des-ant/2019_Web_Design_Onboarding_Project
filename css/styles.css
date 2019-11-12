@@ -39,10 +39,21 @@ body {
     font-size: 17px;
 }
 
+#sign_up {
+    color: #005d59;
+    background-color: white;
+    border-radius: 10px;
+}
+
 
 /* Change the color of links on hover */
 
 .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#sign_up:hover {
     background-color: #ddd;
     color: black;
 }
@@ -428,33 +439,45 @@ input[type="submit"]:hover {
 }
 
 
-/* Endpoint page content */
+/* Endpoint page styling */
 
-.content-endpoint {
+.outer-wrap-endpoint {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.banner {
-    border: 2px solid grey;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    max-width: 1000px;
+.content-endpoint {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 4em;
+}
+
+.window {
+    border: 2px solid #adadad;
     background-color: white;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    width: 100%;
+    max-width: 900px;
 }
 
-.profile-img {
-    max-width: 200px;
+.banner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1 1 auto;
 }
 
-.profile-text {
+.banner-left {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.profile-img {
+    max-width: 200px;
 }
 
 .profile-info {
@@ -463,6 +486,17 @@ input[type="submit"]:hover {
     justify-content: flex-end;
     color: #005d59;
     font-weight: 500;
+    color: white;
+    align-items: flex-start;
+    margin: 1em;
+}
+
+.profile-action-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 1em;
 }
 
 .profile-actions {
@@ -474,6 +508,48 @@ input[type="submit"]:hover {
 
 .profile-actions:hover {
     color: black;
+}
+
+.profile-name {
+    font-size: 2em;
+    background-color: #005d59;
+    margin-bottom: 0.1em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+}
+
+.profile-location {
+    font-size: 1.5em;
+    background-color: #005d59;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+}
+
+.window-msg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1em;
+    line-height: 1.6;
+    margin: 2em 0;
+    color: black;
+    font-weight: 500;
+}
+
+.window-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1em;
+    line-height: 1.6;
+    margin: 1em 0;
+    color: black;
+    font-weight: 500;
+}
+
+.heading-window {
+    font-size: 2em;
+    font-weight: 500;
+    color: #005d59;
+    margin-top: 1.5em;
 }
 
 

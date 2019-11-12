@@ -15,7 +15,7 @@
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Title -->
-    <title>Triple J Unearthed</title>
+    <title>Triple J Unearthed Profile</title>
 
 </head>
 
@@ -24,15 +24,15 @@
         <!-- Navigation Bar -->
         <nav>
             <div class="topnav" id="myTopnav">
-                <a href="#" class="active topnav_left">unearthed</a>
+                <a href="index.html" class="active topnav_left">unearthed</a>
                 <a href="#" class="topnav_left">music</a>
                 <a href="#" class="topnav_left">articles</a>
                 <a href="#" class="topnav_left">competitions</a>
                 <a href="#" class="topnav_left">gigs</a>
                 <a href="#" class="topnav_left">charts</a>
+                <a href="#" class="topnav_right">logout</a>
+                <a href="#" class="topnav_right">profile</a>
                 <a href="#" class="topnav_right">search</a>
-                <a href="#" class="topnav_right">log in</a>
-                <a href="onboard-1.html" class="topnav_right">sign up</a>
                 <a href="javascript:void(0);" class="icon" onclick="openNav()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -42,18 +42,19 @@
 
     <!-- Main Content-->
     <!-- .outer-wrap -->
-    <div class="outer-wrap">
+    <div class="outer-wrap-endpoint">
         <!-- .content -->
         <div class="content-endpoint">
             <!-- .banner -->
-            <div class="banner">
-                <img class="profile-img" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="profile image">
-                <div class="profile-text">
+            <div class="window banner">
+                <div class="banner-left">
+                    <img class="profile-img" src="img/Profile_pic.png" alt="profile image">
                     <div class="profile-info">
                         <h2 class="profile-name">Jake Smith</h2>
                         <h3 class="profile-location">Sydney, NSW</h3>
                     </div>
-
+                </div>
+                <div class="profile-action-group">
                     <a href="#" class="profile-actions">
                         <h3>bio</h3>
                     </a>
@@ -63,10 +64,36 @@
                     <a href="#" class="profile-actions">
                         <h3>share</h3>
                     </a>
-
                 </div>
             </div>
-
+            <!-- .window-msg-->
+            <div class="window window-msg">
+                <p>Welcome to the unearthed family!<br>Start by updating your profile picture and bio.<br>See you around!</p>
+            </div>
+            <div class="songs">
+                <h2 class="heading-window">songs</h2>
+                <div class="window window-content">
+                    <p>Upload songs here</p>
+                </div>
+            </div>
+            <div class="reviews">
+                <h2 class="heading-window">reviews</h2>
+                <div class="window window-content">
+                    <p>your song reviews will be shown here</p>
+                </div>
+            </div>
+            <div class="gigs">
+                <h2 class="heading-window">gigs</h2>
+                <div class="window window-content">
+                    <p>gigs you have created will be shown here</p>
+                </div>
+            </div>
+            <div class="competitions">
+                <h2 class="heading-window">competitions</h2>
+                <div class="window window-content">
+                    <p>competitions you have entered in will be shown here</p>
+                </div>
+            </div>
         </div>
     </div>
 
