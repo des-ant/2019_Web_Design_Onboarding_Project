@@ -473,6 +473,9 @@ input[type="submit"]:hover {
     padding: 0;
     background-color: transparent;
   }
+  .form_wrapper {
+    min-width: 0;
+  }
 }
 
 @media screen and (min-width: 60em) {
