@@ -81,3 +81,8 @@ function msf_btn_back() {
     msf_form_nr = msf_form_nr - 1;
     msf_getFsTag[msf_form_nr].className = "msf_showhide";
 };
+
+// go to endpoint page
+function endpoint() {
+    location.href = "endpoint.html";
+}
