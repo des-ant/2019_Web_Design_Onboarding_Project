@@ -595,6 +595,9 @@ input[type="submit"]:hover {
         max-width: 100%;
         padding: 0 0 0 0;
     }
+    .heading-window {
+        margin: 1.5em 1em 0 1em;
+    }
 }
 
 @media screen and (min-width: 40em) {
@@ -633,6 +636,25 @@ input[type="submit"]:hover {
     }
     .form_wrapper {
         min-width: 0;
+    }
+    .banner {
+        flex-direction: column;
+    }
+    .heading-window {
+        display: flex;
+        justify-content: center;
+    }
+    .window-msg {
+        text-align: center;
+        justify-content: center;
+    }
+    .window-content {
+        text-align: center;
+        justify-content: center;
+    }
+    .banner-left {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
