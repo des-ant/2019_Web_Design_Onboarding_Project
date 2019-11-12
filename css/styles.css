@@ -189,8 +189,7 @@ img {
     background-color: #F0F0F0;
     display: flex;
     justify-content: center;
-    margin-top: 2em;
-    margin-bottom: 4em;
+    margin: 2em 2em 4em 2em;
 }
 
 .msf_line {
@@ -209,7 +208,7 @@ img {
     flex: 0 1 auto;
     margin-top: 2em;
     padding: 2em;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .form_wrapper {
@@ -224,8 +223,8 @@ img {
     display: block;
     text-align: center;
     font-weight: 300;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .signin_p a {
