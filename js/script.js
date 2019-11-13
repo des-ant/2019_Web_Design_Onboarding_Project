@@ -82,7 +82,89 @@ function msf_btn_back() {
     msf_getFsTag[msf_form_nr].className = "msf_showhide";
 };
 
-// go to endpoint page
+// Submit button functionality
 function endpoint() {
+
+    // Create keys to store names and location
+    // Find out how many items are in local storage, then add 1
+    let key_firstName = "key_firstName";
+    let key_lastName = "key_lastName";
+    let key_city = "key_city";
+    let key_country = "key_country";
+
+    // Store the value of the name inputs title as variables
+    let val_firstName = document.getElementById("firstname").value;
+    let val_lastName = document.getElementById("lastname").value;
+    let val_city = document.getElementById("city").value;
+    let val_country = document.getElementById("country").value;
+
+    // Add the key/value pair to localStorage
+    localStorage.setItem(key_firstName, val_firstName);
+    localStorage.setItem(key_lastName, val_lastName);
+    localStorage.setItem(key_city, val_city);
+    localStorage.setItem(key_country, val_country)
+
+    // Go to endpoint page
     location.href = "endpoint.html";
+
+}
+
+// Update profile on endpage using localStorage values
+function updateProfile() {
+
+    // Create keys to access local storage values
+    let key_firstName = "key_firstName";
+    let key_lastName = "key_lastName";
+    let key_city = "key_city";
+    let key_country = "key_country";
+
+    // Access local storage values
+    let firstName = localStorage.getItem(key_firstName);
+    let lastName = localStorage.getItem(key_lastName);
+    let city = localStorage.getItem(key_city);
+    let country = localStorage.getItem(key_country);
+
+    // Replace null values
+    if (!firstName) {
+        firstName = "FirstName"
+    }
+    if (!lastName) {
+        lastName = "LastName"
+    }
+    if (!city) {
+        city = "City"
+    }
+    if (!country) {
+        country = "Country"
+    }
+
+    // Create a new textnode for full name and location
+    let fullName = document.createTextNode(firstName + " " + lastName);
+    let location = document.createTextNode(city + ", " + country);
+    let welcomeMsg = document.createTextNode("Welcome to the unearthed family, " + firstName + "!");
+
+    // Get first child node of 'profile-name' class
+    // Get first child node of 'profile-location' class
+    // Get first child node of 'greeting-msg' id
+    let profileName = document.getElementsByClassName("profile-name")[0];
+    let profileLocation = document.getElementsByClassName("profile-location")[0];
+    let profileMsg = document.getElementById("greeting-msg");
+
+    // Replace first child node of 'profile-name' class with newly created fullName text node
+    // Replace first child node of 'profile-location' class with newly created profileLocation text node
+    // Replace first child node of 'greeting-msg' id with newly created profileMsg text node
+    profileName.replaceChild(fullName, profileName.childNodes[0]);
+    profileLocation.replaceChild(location, profileLocation.childNodes[0]);
+    profileMsg.replaceChild(welcomeMsg, profileMsg.childNodes[0]);
+
+}
+
+// Function for logout button on endpoint page
+function logout() {
+
+    // Clear localStorage data
+    localStorage.clear();
+
+    // Go to index page
+    location.href = "index.html";
 }

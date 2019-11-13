@@ -19,7 +19,9 @@
 
 </head>
 
-<body class="container" id="top">
+<!--  Call updateProfile() function on page load to update profile on endpoint page -->
+
+<body class="container" id="top" onload="updateProfile()">
     <header>
         <!-- Navigation Bar -->
         <nav>
@@ -30,7 +32,7 @@
                 <a href="#" class="topnav_left">competitions</a>
                 <a href="#" class="topnav_left">gigs</a>
                 <a href="#" class="topnav_left">charts</a>
-                <a href="#" class="topnav_right">logout</a>
+                <a href="#" class="topnav_right" onclick="logout()">logout</a>
                 <a href="#" class="topnav_right">profile</a>
                 <a href="#" class="topnav_right">search</a>
                 <a href="javascript:void(0);" class="icon" onclick="openNav()">
@@ -50,8 +52,8 @@
                 <div class="banner-left">
                     <img class="profile-img" src="img/Profile_pic.png" alt="profile image">
                     <div class="profile-info">
-                        <h2 class="profile-name">Jake Smith</h2>
-                        <h3 class="profile-location">Sydney, NSW</h3>
+                        <h2 class="profile-name"> </h2>
+                        <h3 class="profile-location"> </h3>
                     </div>
                 </div>
                 <div class="profile-action-group">
@@ -68,7 +70,9 @@
             </section>
             <!-- .window-msg-->
             <section class="window window-msg">
-                <p>Welcome to the unearthed family!<br>Start by updating your profile picture and bio.<br>See you around!</p>
+                <p id="greeting-msg">Welcome to the unearthed family!</p>
+                <p>Start by updating your profile picture and bio.</p>
+                <p>See you around!</p>
             </section>
             <section class="songs">
                 <h2 class="heading-window">songs</h2>

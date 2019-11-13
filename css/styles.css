@@ -525,8 +525,9 @@ input[type="submit"]:hover {
 
 .window-msg {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
+    align-content: flex-start;
     padding: 1em;
     line-height: 1.6;
     margin: 2em 0;
@@ -536,8 +537,9 @@ input[type="submit"]:hover {
 
 .window-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
+    align-content: flex-start;
     padding: 1em;
     line-height: 1.6;
     margin: 1em 0;
