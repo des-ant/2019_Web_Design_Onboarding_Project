@@ -194,7 +194,7 @@ img {
 }
 
 
-/* Just for decoration */
+/* Form decoration */
 
 #form-body {
     background-color: #f0f0f0;
@@ -552,6 +552,51 @@ input[type="submit"]:hover {
     font-weight: 500;
     color: #005d59;
     margin-top: 1.5em;
+}
+
+.container-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background: url("../img/Bg-action.png") #005d59 no-repeat;
+    margin: -2em 0 0 0;
+    padding: 4em 2em 2em 2em;
+}
+
+.container-action h1,
+.container-action p {
+    color: white;
+}
+
+.container-action p {
+    margin: 0 0 3em 0;
+}
+
+#action-btn {
+    width: 7em;
+    padding: 0.75em 1em;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: #005d59;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.15s ease;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px;
+}
+
+#action-btn:hover {
+    transform: translateY(-4px);
+}
+
+#action-btn:active {
+    color: white;
+    background-color: #005d59;
+    transform: translateY(-4px);
 }
 
 
