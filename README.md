@@ -12,8 +12,8 @@
 
 ## Screenshots
 
-[![Screenshot of Dekstop User Flow]](https://raw.githubusercontent.com/des-ant/2019_Web_Design_Onboarding_Project/master/screenshots/User_Flow_Desktop.jpg
+![Screenshot of Dekstop User Flow](https://raw.githubusercontent.com/des-ant/2019_Web_Design_Onboarding_Project/master/screenshots/User_Flow_Desktop.jpg
 "Desktop User Flow")
 
-[![Screenshot of Mobile User Flow]](https://raw.githubusercontent.com/des-ant/2019_Web_Design_Onboarding_Project/master/screenshots/User_Flow_Mobile.jpg
+![Screenshot of Mobile User Flow](https://raw.githubusercontent.com/des-ant/2019_Web_Design_Onboarding_Project/master/screenshots/User_Flow_Mobile.jpg
 "Mobile User Flow")
