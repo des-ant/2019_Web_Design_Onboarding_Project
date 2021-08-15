@@ -6,7 +6,7 @@
 
 **Role**: User Research, UX/UI Design, Interaction Design, Web Design
 
-**Tools**: HTML, CSS, JavaScript
+**Tools**: HTML, CSS, JavaScript, Adobe InDesign, Adobe Illustrator, Adobe Photoshop
 
 [View Project](https://des-ant.github.io/2019_Web_Design_Onboarding_Project/)
 
